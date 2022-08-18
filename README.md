@@ -24,6 +24,7 @@ ENV TZ=Asia/Seoul
 ```go
 ENTRYPOINT [ "python" ]
 ```
-ENTRYPOINT인자 뒤에 실행됨
-컨테이너에서 딱 한번 실행됨 그래서 1번만 실행할 수 있고 이 명령어 뒤에는 명령어를 사용할수 없다.
+ENTRYPOINT인자 뒤에 실행되며, 컨테이너에서 딱 한번 실행됨 그래서 1번만 실행할 수 있고 이 명령어 뒤에는 명령어를 사용할수 없다.
+```go
 CMD [ "discode.py" ]
+```
